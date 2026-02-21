@@ -1,0 +1,848 @@
+[
+  {
+    "id": 1001,
+    "stage": 1,
+    "type": "meaning",
+    "question": "Kumain ako.",
+    "choices": ["私は食べた", "私は行った", "私は寝た", "私は買った"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞 過去形",
+    "explanation": "Kumainはkain（食べる）のUM過去形。"
+  },
+  {
+    "id": 1002,
+    "stage": 1,
+    "type": "meaning",
+    "question": "Natulog siya.",
+    "choices": ["彼は寝た", "彼は走った", "彼は怒った", "彼は食べた"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞 過去形",
+    "explanation": "Natulogはtulog（寝る）の過去形。"
+  },
+  {
+    "id": 1003,
+    "stage": 1,
+    "type": "fill_blank",
+    "question": "_____ ako ng tubig.",
+    "choices": ["Uminom", "Pumunta", "Tumakbo", "Nagtrabaho"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞",
+    "explanation": "Uminom＝飲んだ。"
+  },
+  {
+    "id": 1004,
+    "stage": 1,
+    "type": "order",
+    "question": "正しい語順はどれ？",
+    "choices": [
+      "Kumain ako kahapon.",
+      "Ako kumain kahapon.",
+      "Kahapon ako kumain.",
+      "Ako kahapon kumain."
+    ],
+    "answerIndex": 0,
+    "grammarPoint": "基本語順",
+    "explanation": "動詞が基本的に文頭に来る。"
+  },
+  {
+    "id": 1005,
+    "stage": 1,
+    "type": "meaning",
+    "question": "Pumunta kami sa mall.",
+    "choices": ["私たちはモールへ行った", "私たちは寝た", "私たちは食べた", "私たちは帰った"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞",
+    "explanation": "Pumunta＝行った。"
+  },
+  {
+    "id": 1006,
+    "stage": 1,
+    "type": "fill_blank",
+    "question": "_____ sila kahapon.",
+    "choices": ["Nagtrabaho", "Kumain", "Tumawa", "Uminom"],
+    "answerIndex": 1,
+    "grammarPoint": "主語一致",
+    "explanation": "Kumain sila＝彼らは食べた。"
+  },
+  {
+    "id": 1007,
+    "stage": 1,
+    "type": "error",
+    "question": "間違っている文はどれ？",
+    "choices": [
+      "Kumain ako.",
+      "Natulog siya.",
+      "Ako kumain.",
+      "Uminom kami."
+    ],
+    "answerIndex": 2,
+    "grammarPoint": "語順",
+    "explanation": "動詞が文頭に来る。"
+  },
+  {
+    "id": 1008,
+    "stage": 1,
+    "type": "meaning",
+    "question": "Tumawa siya.",
+    "choices": ["彼は笑った", "彼は怒った", "彼は行った", "彼は泣いた"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞",
+    "explanation": "Tumawa＝笑った。"
+  },
+  {
+    "id": 1009,
+    "stage": 1,
+    "type": "fill_blank",
+    "question": "_____ ako sa bahay.",
+    "choices": ["Pumunta", "Uminom", "Kumain", "Tumawa"],
+    "answerIndex": 0,
+    "grammarPoint": "場所表現",
+    "explanation": "Pumunta ako sa bahay＝家へ行った。"
+  },
+  {
+    "id": 1010,
+    "stage": 1,
+    "type": "meaning",
+    "question": "Uminom ako ng kape.",
+    "choices": ["私はコーヒーを飲んだ", "私はコーヒーを食べた", "私はコーヒーを買った", "私はコーヒーを作った"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞",
+    "explanation": "Uminom＝飲んだ。"
+  },
+  {
+    "id": 1011,
+    "stage": 2,
+    "type": "meaning",
+    "question": "Kumain ang bata ng mangga.",
+    "choices": ["子どもがマンゴーを食べた", "マンゴーが子どもを食べた", "子どもが行った", "マンゴーを買った"],
+    "answerIndex": 0,
+    "grammarPoint": "Ang/Ng",
+    "explanation": "ang=主語、ng=目的語。"
+  },
+  {
+    "id": 1012,
+    "stage": 2,
+    "type": "fill_blank",
+    "question": "Pumunta ako ___ school.",
+    "choices": ["sa", "ng", "ang", "ni"],
+    "answerIndex": 0,
+    "grammarPoint": "Sa=場所",
+    "explanation": "saは場所を示す。"
+  },
+  {
+    "id": 1013,
+    "stage": 2,
+    "type": "fill_blank",
+    "question": "Kumain ___ lalaki ng isda.",
+    "choices": ["ang", "ng", "sa", "ni"],
+    "answerIndex": 0,
+    "grammarPoint": "Ang=主語",
+    "explanation": "ang lalaki＝その男性。"
+  },
+  {
+    "id": 1014,
+    "stage": 2,
+    "type": "fill_blank",
+    "question": "Uminom ang babae ___ tubig.",
+    "choices": ["ng", "sa", "ang", "ni"],
+    "answerIndex": 0,
+    "grammarPoint": "Ng=目的語",
+    "explanation": "ng tubig＝水を。"
+  },
+  {
+    "id": 1015,
+    "stage": 2,
+    "type": "meaning",
+    "question": "Pumunta sila sa mall.",
+    "choices": ["彼らはモールへ行った", "モールが来た", "彼らは寝た", "彼らは買った"],
+    "answerIndex": 0,
+    "grammarPoint": "Sa=場所",
+    "explanation": "sa mall＝モールへ。"
+  },
+  {
+    "id": 1016,
+    "stage": 2,
+    "type": "error",
+    "question": "間違っている文はどれ？",
+    "choices": [
+      "Kumain ang bata ng tinapay.",
+      "Uminom ang lalaki sa tubig.",
+      "Pumunta siya sa bahay.",
+      "Nagtrabaho ang guro."
+    ],
+    "answerIndex": 1,
+    "grammarPoint": "NgとSa",
+    "explanation": "飲み物はngを使う。"
+  },
+  {
+    "id": 1017,
+    "stage": 2,
+    "type": "meaning",
+    "question": "May ipis sa kusina.",
+    "choices": ["台所にゴキブリがいる", "台所が壊れた", "ゴキブリを食べた", "台所へ行った"],
+    "answerIndex": 0,
+    "grammarPoint": "Sa=場所",
+    "explanation": "sa kusina＝台所に。"
+  },
+  {
+    "id": 1018,
+    "stage": 2,
+    "type": "fill_blank",
+    "question": "May daga ___ bahay.",
+    "choices": ["sa", "ng", "ang", "ni"],
+    "answerIndex": 0,
+    "grammarPoint": "Sa=場所",
+    "explanation": "家にネズミがいる。"
+  },
+  {
+    "id": 1019,
+    "stage": 2,
+    "type": "meaning",
+    "question": "Nagbayad ako ng tip.",
+    "choices": ["私はチップを払った", "私は税金を払った", "私は寝た", "私は走った"],
+    "answerIndex": 0,
+    "grammarPoint": "Ng=目的語",
+    "explanation": "ng tip＝チップを。"
+  },
+  {
+    "id": 1020,
+    "stage": 2,
+    "type": "meaning",
+    "question": "May traffic sa Manila.",
+    "choices": ["マニラは渋滞だ", "マニラは静かだ", "マニラは寒い", "マニラは遠い"],
+    "answerIndex": 0,
+    "grammarPoint": "Sa=場所",
+    "explanation": "sa Manila＝マニラで。"
+  },
+  {
+    "id": 1021,
+    "stage": 3,
+    "type": "meaning",
+    "question": "Ako ay estudyante.",
+    "choices": ["私は学生です", "あなたは学生です", "彼は学生です", "彼らは学生です"],
+    "answerIndex": 0,
+    "grammarPoint": "代名詞Ako",
+    "explanation": "Ako＝私。"
+  },
+  {
+    "id": 1022,
+    "stage": 3,
+    "type": "meaning",
+    "question": "Ikaw ba ay pagod?",
+    "choices": ["あなたは疲れていますか？", "私は疲れています", "彼は疲れている", "彼らは元気だ"],
+    "answerIndex": 0,
+    "grammarPoint": "疑問文",
+    "explanation": "Ikaw＝あなた。"
+  },
+  {
+    "id": 1023,
+    "stage": 3,
+    "type": "fill_blank",
+    "question": "_____ ay masaya.",
+    "choices": ["Siya", "Ako", "Kami", "Tayo"],
+    "answerIndex": 0,
+    "grammarPoint": "三人称",
+    "explanation": "Siya＝彼/彼女。"
+  },
+  {
+    "id": 1024,
+    "stage": 3,
+    "type": "meaning",
+    "question": "Kami ay gutom.",
+    "choices": ["私たち（聞き手含まない）はお腹が空いた", "あなたは空腹だ", "彼らは空腹だ", "私は空腹だ"],
+    "answerIndex": 0,
+    "grammarPoint": "Kami",
+    "explanation": "Kami＝話し手側のみ。"
+  },
+  {
+    "id": 1025,
+    "stage": 3,
+    "type": "meaning",
+    "question": "Tayo ay aalis.",
+    "choices": ["私たち（含む）は出発する", "私は出発する", "彼らは出発する", "あなたは出発する"],
+    "answerIndex": 0,
+    "grammarPoint": "Tayo",
+    "explanation": "Tayo＝聞き手含む。"
+  },
+  {
+    "id": 1026,
+    "stage": 3,
+    "type": "meaning",
+    "question": "Sila ay nagtrabaho.",
+    "choices": ["彼らは働いた", "彼は働いた", "私たちは働いた", "あなたは働いた"],
+    "answerIndex": 0,
+    "grammarPoint": "Sila",
+    "explanation": "Sila＝彼ら。"
+  },
+  {
+    "id": 1027,
+    "stage": 3,
+    "type": "error",
+    "question": "間違っているのは？",
+    "choices": [
+      "Kami ay masaya.",
+      "Tayo ay pagod.",
+      "Ako ay gutom.",
+      "Sila ay ako."
+    ],
+    "answerIndex": 3,
+    "grammarPoint": "代名詞一致",
+    "explanation": "Silaは単数に使えない。"
+  },
+  {
+    "id": 1028,
+    "stage": 3,
+    "type": "meaning",
+    "question": "Ikaw ay mabait.",
+    "choices": ["あなたは優しい", "私は優しい", "彼は優しい", "彼らは優しい"],
+    "answerIndex": 0,
+    "grammarPoint": "二人称",
+    "explanation": "Ikaw＝あなた。"
+  },
+  {
+    "id": 1029,
+    "stage": 3,
+    "type": "fill_blank",
+    "question": "_____ ay pupunta sa casino.",
+    "choices": ["Siya", "Ako", "Kami", "Sila"],
+    "answerIndex": 0,
+    "grammarPoint": "三人称未来",
+    "explanation": "Siya＝彼/彼女。"
+  },
+  {
+    "id": 1030,
+    "stage": 3,
+    "type": "meaning",
+    "question": "Ako ay natatakot.",
+    "choices": ["私は怖い", "私は怒っている", "私は眠い", "私は空腹だ"],
+    "answerIndex": 0,
+    "grammarPoint": "感情表現",
+    "explanation": "Natatakot＝怖い。"
+  },
+  {
+    "id": 1031,
+    "stage": 4,
+    "type": "meaning",
+    "question": "Kumakain ako.",
+    "choices": ["私は食べている", "私は食べた", "私は食べる予定だ", "私は料理した"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞 進行形",
+    "explanation": "繰り返しで進行形。"
+  },
+  {
+    "id": 1032,
+    "stage": 4,
+    "type": "meaning",
+    "question": "Kakain ako bukas.",
+    "choices": ["私は明日食べる", "私は昨日食べた", "私は今食べている", "私は食べない"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞 未来形",
+    "explanation": "語幹重複で未来。"
+  },
+  {
+    "id": 1033,
+    "stage": 4,
+    "type": "fill_blank",
+    "question": "_____ siya ng tubig ngayon.",
+    "choices": ["Umiinom", "Uminom", "Iinom", "Nag-inom"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "今＝進行形。"
+  },
+  {
+    "id": 1034,
+    "stage": 4,
+    "type": "meaning",
+    "question": "Pumunta siya kahapon.",
+    "choices": ["彼は昨日行った", "彼は明日行く", "彼は行っている", "彼は来た"],
+    "answerIndex": 0,
+    "grammarPoint": "過去形",
+    "explanation": "過去形はum挿入。"
+  },
+  {
+    "id": 1035,
+    "stage": 4,
+    "type": "error",
+    "question": "間違っている文は？",
+    "choices": [
+      "Kumain ako.",
+      "Kakain ako.",
+      "Kumakain ako.",
+      "Kain ako."
+    ],
+    "answerIndex": 3,
+    "grammarPoint": "UM動詞活用",
+    "explanation": "裸の動詞は使えない。"
+  },
+  {
+    "id": 1036,
+    "stage": 4,
+    "type": "meaning",
+    "question": "Tumakbo siya.",
+    "choices": ["彼は走った", "彼は食べた", "彼は飲んだ", "彼は寝た"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞",
+    "explanation": "Tumakbo＝走った。"
+  },
+  {
+    "id": 1037,
+    "stage": 4,
+    "type": "fill_blank",
+    "question": "_____ ako mamaya.",
+    "choices": ["Pupunta", "Pumunta", "Pumupunta", "Napunta"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "mamaya＝未来。"
+  },
+  {
+    "id": 1038,
+    "stage": 4,
+    "type": "meaning",
+    "question": "Umiiyak ang bata.",
+    "choices": ["子どもが泣いている", "子どもが笑った", "子どもが寝た", "子どもが怒った"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Umiiyak＝泣いている。"
+  },
+  {
+    "id": 1039,
+    "stage": 4,
+    "type": "meaning",
+    "question": "Iinom ako mamaya.",
+    "choices": ["私は後で飲む", "私は飲んだ", "私は飲んでいる", "私は飲まない"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "Iinom＝未来形。"
+  },
+  {
+    "id": 1040,
+    "stage": 4,
+    "type": "meaning",
+    "question": "Dumating siya.",
+    "choices": ["彼は到着した", "彼は出発した", "彼は怒った", "彼は寝た"],
+    "answerIndex": 0,
+    "grammarPoint": "UM動詞",
+    "explanation": "Dumating＝到着した。"
+  },
+  {
+    "id": 1041,
+    "stage": 5,
+    "type": "meaning",
+    "question": "Nagtrabaho ako.",
+    "choices": ["私は働いた", "私は寝た", "私は走った", "私は泣いた"],
+    "answerIndex": 0,
+    "grammarPoint": "MAG過去形",
+    "explanation": "Nag-＝過去。"
+  },
+  {
+    "id": 1042,
+    "stage": 5,
+    "type": "meaning",
+    "question": "Magluluto ako.",
+    "choices": ["私は料理する予定だ", "私は料理した", "私は料理している", "私は料理しない"],
+    "answerIndex": 0,
+    "grammarPoint": "MAG未来形",
+    "explanation": "Mag+重複＝未来。"
+  },
+  {
+    "id": 1043,
+    "stage": 5,
+    "type": "meaning",
+    "question": "Naglalaro sila.",
+    "choices": ["彼らは遊んでいる", "彼らは遊んだ", "彼らは働いている", "彼らは食べた"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Nag+重複＝進行。"
+  },
+  {
+    "id": 1044,
+    "stage": 5,
+    "type": "fill_blank",
+    "question": "_____ ako bukas.",
+    "choices": ["Mag-aaral", "Nag-aaral", "Nag-aral", "Aral"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "未来はMag+重複。"
+  },
+  {
+    "id": 1045,
+    "stage": 5,
+    "type": "error",
+    "question": "間違いは？",
+    "choices": [
+      "Nagtrabaho ako.",
+      "Magtrabaho ako.",
+      "Nagluto siya.",
+      "Magluluto ako."
+    ],
+    "answerIndex": 1,
+    "grammarPoint": "命令との違い",
+    "explanation": "Magtrabahoは命令形になる。"
+  },
+  {
+    "id": 1046,
+    "stage": 5,
+    "type": "meaning",
+    "question": "Nagbayad ako.",
+    "choices": ["私は支払った", "私は食べた", "私は走った", "私は泣いた"],
+    "answerIndex": 0,
+    "grammarPoint": "MAG過去形",
+    "explanation": "Nagbayad＝支払った。"
+  },
+  {
+    "id": 1047,
+    "stage": 5,
+    "type": "meaning",
+    "question": "Maglilinis siya.",
+    "choices": ["彼は掃除する予定だ", "彼は掃除した", "彼は掃除している", "彼は寝た"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "Mag+重複。"
+  },
+  {
+    "id": 1048,
+    "stage": 5,
+    "type": "meaning",
+    "question": "Nagsimula ang klase.",
+    "choices": ["授業が始まった", "授業が終わった", "授業が中止だ", "授業が遅れた"],
+    "answerIndex": 0,
+    "grammarPoint": "過去形",
+    "explanation": "Nagsimula＝始まった。"
+  },
+  {
+    "id": 1049,
+    "stage": 5,
+    "type": "fill_blank",
+    "question": "_____ kami ngayon.",
+    "choices": ["Nag-uusap", "Mag-uusap", "Nag-usap", "Usap"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "今＝Nag+重複。"
+  },
+  {
+    "id": 1050,
+    "stage": 5,
+    "type": "meaning",
+    "question": "Maglalakbay kami.",
+    "choices": ["私たちは旅行する予定だ", "私たちは旅行した", "私たちは旅行している", "私たちは寝た"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "未来形。"
+  },
+  {
+    "id": 1051,
+    "stage": 6,
+    "type": "meaning",
+    "question": "Nagresign siya kahapon.",
+    "choices": ["彼は昨日退職した", "彼は昨日入社した", "彼は昨日寝た", "彼は昨日怒った"],
+    "answerIndex": 0,
+    "grammarPoint": "過去形",
+    "explanation": "Nagresign＝退職した。"
+  },
+  {
+    "id": 1052,
+    "stage": 6,
+    "type": "meaning",
+    "question": "Nagkasakit ako.",
+    "choices": ["私は病気になった", "私は元気だ", "私は働いた", "私は食べた"],
+    "answerIndex": 0,
+    "grammarPoint": "過去形",
+    "explanation": "Nagkasakit＝病気になった。"
+  },
+  {
+    "id": 1053,
+    "stage": 6,
+    "type": "meaning",
+    "question": "Kumain ako sa karinderya.",
+    "choices": ["私は食堂で食べた", "私は寝た", "私は行った", "私は働いた"],
+    "answerIndex": 0,
+    "grammarPoint": "過去形",
+    "explanation": "Kumain＝食べた。"
+  },
+  {
+    "id": 1054,
+    "stage": 6,
+    "type": "fill_blank",
+    "question": "_____ siya kahapon sa casino.",
+    "choices": ["Naglaro", "Maglaro", "Naglalaro", "Laro"],
+    "answerIndex": 0,
+    "grammarPoint": "過去形",
+    "explanation": "kahapon＝過去。"
+  },
+  {
+    "id": 1055,
+    "stage": 6,
+    "type": "error",
+    "question": "間違いは？",
+    "choices": [
+      "Nagtrabaho ako kahapon.",
+      "Magtrabaho ako kahapon.",
+      "Kumain ako kahapon.",
+      "Uminom ako kahapon."
+    ],
+    "answerIndex": 1,
+    "grammarPoint": "時制",
+    "explanation": "過去にはNag-を使う。"
+  },
+  {
+    "id": 1056,
+    "stage": 6,
+    "type": "meaning",
+    "question": "Nagbayad ako ng mahal na pagkain.",
+    "choices": ["私は高い食事を払った", "私は安い食事を払った", "私は食べた", "私は盗まれた"],
+    "answerIndex": 0,
+    "grammarPoint": "形容詞+過去",
+    "explanation": "mahal＝高い。"
+  },
+  {
+    "id": 1057,
+    "stage": 6,
+    "type": "meaning",
+    "question": "Naglinis ako ng maruming CR.",
+    "choices": ["私は汚いトイレを掃除した", "私は綺麗なトイレを使った", "私は寝た", "私は走った"],
+    "answerIndex": 0,
+    "grammarPoint": "形容詞+過去",
+    "explanation": "marumi＝汚い。"
+  },
+  {
+    "id": 1058,
+    "stage": 6,
+    "type": "meaning",
+    "question": "May nagnakaw kahapon.",
+    "choices": ["昨日誰かが盗んだ", "昨日誰かが来た", "昨日誰かが笑った", "昨日誰かが寝た"],
+    "answerIndex": 0,
+    "grammarPoint": "過去形",
+    "explanation": "nagnakaw＝盗んだ。"
+  },
+  {
+    "id": 1059,
+    "stage": 6,
+    "type": "fill_blank",
+    "question": "_____ ako dahil sa traffic.",
+    "choices": ["Nahuli", "Mahuli", "Nahuhuli", "Huli"],
+    "answerIndex": 0,
+    "grammarPoint": "受動過去",
+    "explanation": "Nahuli＝遅れた。"
+  },
+  {
+    "id": 1060,
+    "stage": 6,
+    "type": "meaning",
+    "question": "Natuwa ako sa murang massage.",
+    "choices": ["私は安いマッサージに喜んだ", "私は怒った", "私は寝た", "私は泣いた"],
+    "answerIndex": 0,
+    "grammarPoint": "感情過去",
+    "explanation": "Natuwa＝喜んだ。"
+  },
+  {
+    "id": 1061,
+    "stage": 7,
+    "type": "meaning",
+    "question": "Kakain ako bukas.",
+    "choices": ["私は明日食べる", "私は昨日食べた", "私は今食べている", "私は食べない"],
+    "answerIndex": 0,
+    "grammarPoint": "UM未来形",
+    "explanation": "語幹重複＝未来。"
+  },
+  {
+    "id": 1062,
+    "stage": 7,
+    "type": "meaning",
+    "question": "Maglalakbay kami sa Cebu.",
+    "choices": ["私たちはセブへ旅行する予定だ", "私たちは旅行した", "私たちは寝る", "私たちは働いた"],
+    "answerIndex": 0,
+    "grammarPoint": "MAG未来形",
+    "explanation": "Mag+重複＝未来。"
+  },
+  {
+    "id": 1063,
+    "stage": 7,
+    "type": "fill_blank",
+    "question": "_____ siya mamaya.",
+    "choices": ["Pupunta", "Pumunta", "Pumupunta", "Napunta"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "mamaya＝未来。"
+  },
+  {
+    "id": 1064,
+    "stage": 7,
+    "type": "meaning",
+    "question": "Bibili ako ng mahal na sushi.",
+    "choices": ["私は高い寿司を買う予定だ", "私は寿司を食べた", "私は寿司を作った", "私は寿司を捨てた"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "Bibili＝買う予定。"
+  },
+  {
+    "id": 1065,
+    "stage": 7,
+    "type": "error",
+    "question": "未来形はどれ？",
+    "choices": [
+      "Nagtrabaho ako.",
+      "Kumakain ako.",
+      "Magluluto ako.",
+      "Kumain ako."
+    ],
+    "answerIndex": 2,
+    "grammarPoint": "時制識別",
+    "explanation": "Mag+重複＝未来。"
+  },
+  {
+    "id": 1066,
+    "stage": 7,
+    "type": "meaning",
+    "question": "Iinom siya bukas.",
+    "choices": ["彼は明日飲む", "彼は昨日飲んだ", "彼は飲んでいる", "彼は飲まない"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "Iinom＝未来。"
+  },
+  {
+    "id": 1067,
+    "stage": 7,
+    "type": "meaning",
+    "question": "Magre-resign siya.",
+    "choices": ["彼は退職する予定だ", "彼は退職した", "彼は働いている", "彼は怒った"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "Magre-resign＝未来。"
+  },
+  {
+    "id": 1068,
+    "stage": 7,
+    "type": "fill_blank",
+    "question": "_____ kami sa casino mamaya.",
+    "choices": ["Maglalaro", "Naglalaro", "Naglaro", "Laro"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "mamaya＝未来。"
+  },
+  {
+    "id": 1069,
+    "stage": 7,
+    "type": "meaning",
+    "question": "Maglilinis ako ng maruming CR.",
+    "choices": ["私は汚いトイレを掃除する予定だ", "私は掃除した", "私は使った", "私は壊した"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "Maglilinis＝掃除する予定。"
+  },
+  {
+    "id": 1070,
+    "stage": 7,
+    "type": "meaning",
+    "question": "Dadalaw kami sa ospital.",
+    "choices": ["私たちは病院を訪れる予定だ", "私たちは入院した", "私たちは退院した", "私たちは寝る"],
+    "answerIndex": 0,
+    "grammarPoint": "未来形",
+    "explanation": "Dadalaw＝訪れる。"
+  },
+  {
+    "id": 1071,
+    "stage": 8,
+    "type": "meaning",
+    "question": "Kumakain siya ngayon.",
+    "choices": ["彼は今食べている", "彼は昨日食べた", "彼は明日食べる", "彼は食べない"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "重複で進行。"
+  },
+  {
+    "id": 1072,
+    "stage": 8,
+    "type": "meaning",
+    "question": "Naglalaro sila.",
+    "choices": ["彼らは遊んでいる", "彼らは遊んだ", "彼らは働いている", "彼らは泣いた"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Nag+重複。"
+  },
+  {
+    "id": 1073,
+    "stage": 8,
+    "type": "fill_blank",
+    "question": "_____ ako ngayon.",
+    "choices": ["Nagtatrabaho", "Nagtrabaho", "Magtrabaho", "Trabaho"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "ngayon＝進行。"
+  },
+  {
+    "id": 1074,
+    "stage": 8,
+    "type": "meaning",
+    "question": "Umiiyak ang bata.",
+    "choices": ["子どもが泣いている", "子どもが笑った", "子どもが寝た", "子どもが怒った"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Umiiyak＝泣いている。"
+  },
+  {
+    "id": 1075,
+    "stage": 8,
+    "type": "error",
+    "question": "進行形はどれ？",
+    "choices": [
+      "Nagtrabaho ako.",
+      "Nagtatrabaho ako.",
+      "Magtrabaho ako.",
+      "Nagtrabaho ako kahapon."
+    ],
+    "answerIndex": 1,
+    "grammarPoint": "進行識別",
+    "explanation": "Nag+重複。"
+  },
+  {
+    "id": 1076,
+    "stage": 8,
+    "type": "meaning",
+    "question": "Nagbabayad ako ng tip.",
+    "choices": ["私はチップを払っている", "私は払った", "私は払う予定だ", "私は怒った"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Nagbabayad＝支払い中。"
+  },
+  {
+    "id": 1077,
+    "stage": 8,
+    "type": "meaning",
+    "question": "Nag-aaral siya.",
+    "choices": ["彼は勉強している", "彼は勉強した", "彼は寝た", "彼は遊んだ"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Nag-aaral＝勉強中。"
+  },
+  {
+    "id": 1078,
+    "stage": 8,
+    "type": "fill_blank",
+    "question": "_____ kami sa mall ngayon.",
+    "choices": ["Naglalakad", "Naglakad", "Maglakad", "Lak ad"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Nag+重複。"
+  },
+  {
+    "id": 1079,
+    "stage": 8,
+    "type": "meaning",
+    "question": "Umiinom siya ng kape.",
+    "choices": ["彼はコーヒーを飲んでいる", "彼は飲んだ", "彼は飲む予定だ", "彼は寝た"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Umiinom＝飲んでいる。"
+  },
+  {
+    "id": 1080,
+    "stage": 8,
+    "type": "meaning",
+    "question": "Naglilinis ako ng bahay.",
+    "choices": ["私は家を掃除している", "私は掃除した", "私は壊した", "私は寝た"],
+    "answerIndex": 0,
+    "grammarPoint": "進行形",
+    "explanation": "Naglilinis＝掃除中。"
+  }
+]
+
