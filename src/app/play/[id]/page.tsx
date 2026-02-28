@@ -62,9 +62,9 @@ export default function PlayStage({ params }: { params: Promise<{ id: string }> 
         } else {
             // Stage Complete
             heal(30); // Restore 30 HP on stage clear
-            if (stageId < 20) {
+            if (stageId < 15) {
                 setStage(stageId + 1);
-                router.push('/stage'); // Or go directly to next stage
+                router.push('/stage');
             } else {
                 router.push('/'); // End of game
             }
@@ -93,7 +93,15 @@ export default function PlayStage({ params }: { params: Promise<{ id: string }> 
         <GameLayout>
             <div className="flex flex-col h-full max-w-2xl mx-auto">
                 <div className="mb-4 flex justify-between items-end">
-                    <h2 className="text-2xl font-bold text-neon-pink">STAGE {stageId}</h2>
+                    <div className="flex items-center gap-3">
+                        <h2 className="text-2xl font-bold text-neon-pink">STAGE {stageId}</h2>
+                        <span className={`text-xs font-bold px-2 py-0.5 rounded-full border ${currentQuiz.type === 'word' ? 'bg-blue-900 border-blue-400 text-blue-300' :
+                                currentQuiz.type === 'phrase' ? 'bg-purple-900 border-purple-400 text-purple-300' :
+                                    'bg-yellow-900 border-yellow-400 text-yellow-300'
+                            }`}>
+                            {currentQuiz.type === 'word' ? '📖 単語' : currentQuiz.type === 'phrase' ? '💬 フレーズ' : '📝 文法'}
+                        </span>
+                    </div>
                     <span className="text-gray-400 text-sm">Question {currentQuizIndex + 1} / {quizzes.length}</span>
                 </div>
 

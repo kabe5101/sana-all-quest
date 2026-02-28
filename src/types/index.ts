@@ -27,7 +27,7 @@ export interface Phrase {
 export interface QuizItem {
     id: number;
     stage: number;
-    type: 'meaning' | 'fill_blank' | 'order' | 'error';
+    type: 'meaning' | 'fill_blank' | 'order' | 'error' | 'word' | 'phrase';
     question: string;
     choices: string[];
     answerIndex: number;
