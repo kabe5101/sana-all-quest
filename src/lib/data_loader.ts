@@ -147,3 +147,49 @@ export const getWordsByCategory = (category: string): Word[] => {
 export const getPhrasesByCategory = (category: string): Phrase[] => {
     return phrases.filter(phrase => phrase.category === category);
 };
+
+// ボス戦対象エリアの定義（ボスステージ番号 → 対象ステージ配列）
+const BOSS_STAGE_AREAS: Record<number, number[]> = {
+    3: [1, 2, 3],
+    6: [4, 5, 6],
+    9: [7, 8, 9],
+    12: [10, 11, 12],
+    15: [13, 14, 15],
+};
+
+// ボス戦クイズ取得（対象エリア3ステージ分のプールから word×5 / grammar×3 / phrase×2）
+export const getBossQuizzes = (bossStage: number): QuizItem[] => {
+    const targetStages = BOSS_STAGE_AREAS[bossStage];
+    if (!targetStages) return [];
+
+    // 1. Grammar問題プール（対象3ステージ分を結合）
+    const grammarPool = grammars.filter(q => targetStages.includes(q.stage));
+    const grammarSelected = shuffle(grammarPool).slice(0, 3);
+
+    // 2. Word問題プール（各ステージのID範囲合算）
+    const wordItems: QuizItem[] = [];
+    targetStages.forEach(stage => {
+        const [min, max] = STAGE_WORD_RANGES[stage] ?? [1, 10];
+        const stageWords = words.filter(w => w.id >= min && w.id <= max);
+        const picked = shuffle(stageWords)
+            .slice(0, 2) // 各ステージから2問ずつ → 最大6問から5問選ぶ
+            .map((w, i) => wordToQuizItem(w, stage, 70000 + stage * 100 + i));
+        wordItems.push(...picked);
+    });
+    const wordSelected = shuffle(wordItems).slice(0, 5);
+
+    // 3. Phrase問題プール（各ステージのID範囲合算）
+    const phraseItems: QuizItem[] = [];
+    targetStages.forEach(stage => {
+        const [min, max] = STAGE_PHRASE_RANGES[stage] ?? [8001, 8020];
+        const stagePhrases = phrases.filter(p => p.id >= min && p.id <= max);
+        const picked = shuffle(stagePhrases)
+            .slice(0, 1) // 各ステージから1問ずつ → 3問から2問選ぶ
+            .map((p, i) => phraseToQuizItem(p, stage, 60000 + stage * 100 + i));
+        phraseItems.push(...picked);
+    });
+    const phraseSelected = shuffle(phraseItems).slice(0, 2);
+
+    return shuffle([...wordSelected, ...grammarSelected, ...phraseSelected]);
+};
+

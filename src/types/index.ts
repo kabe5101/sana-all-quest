@@ -1,3 +1,18 @@
+export interface StoryScene {
+    speaker: string;
+    text: string;
+}
+
+export interface StageStoryData {
+    stageId: number;
+    title: string;
+    startStory: StoryScene[];
+    endStory: StoryScene[];
+    isBossStage: boolean;
+    bossStartStory?: StoryScene[];
+    bossEndStory?: StoryScene[];
+}
+
 export interface Word {
     id: number;
     word: string;
